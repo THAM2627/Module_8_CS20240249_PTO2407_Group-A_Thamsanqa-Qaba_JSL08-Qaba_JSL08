@@ -16,6 +16,9 @@ class BankBranch {
             return bankBranchInstance
         }
     }
+    get branchInfo() {
+        return this.branchInfo
+    }
 }
 //    - Create a constructor that takes `branchInfo` as a parameter.
 //    - Inside the constructor, check if the `bankBranchInstance` variable is null (indicating no instance exists).
