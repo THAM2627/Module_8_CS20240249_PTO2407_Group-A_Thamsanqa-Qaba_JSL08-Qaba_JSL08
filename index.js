@@ -5,8 +5,8 @@ const bankBranchInstance = null
 
 // 2. Define a class called `BankBranch` for managing branch information.
 class BankBranch {
-
-
+    branchName = "CodeSpace Bank"
+    branchAddress = "3 Main Street"
     // 3. In the `BankBranch` class:
     constructor(branchInfo) {
         if (bankBranchInstance === null) {
