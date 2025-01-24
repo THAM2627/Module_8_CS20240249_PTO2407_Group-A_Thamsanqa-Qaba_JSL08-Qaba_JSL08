@@ -28,11 +28,19 @@ class BankBranch {
 
 // 4. Add methods to the `BankBranch` class for managing branch-related information. For example, you can add a method like `getBranchInfo` to retrieve branch details.
 
+
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
 
+getBranchInfo = () => {
+    if (branchA === branchB) {
+        console.log("Branch A and Branch B refer to the same instance.")
+    } else {
+        console.log("Branch A and Branch B refer to different instances.")
+    }
+}
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
-//    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
+//    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using ` === `.
 
 // This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
 
