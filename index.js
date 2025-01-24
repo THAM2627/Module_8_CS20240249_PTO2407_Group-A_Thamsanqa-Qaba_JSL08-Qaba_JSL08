@@ -31,6 +31,15 @@ class BankBranch {
 
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
+class branchA extends BankBranch {
+    branchName = "Big Boy Bank"
+    branchAddress = "6 Main Street"
+}
+
+class branchB extends BankBranch {
+    branchName = "Small Boy Bank"
+    branchAddress = "2 Main Street"
+}
 
 getBranchInfo = () => {
     if (branchA === branchB) {
