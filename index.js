@@ -12,9 +12,8 @@ class BankBranch {
         if (bankBranchInstance === null) {
             this.branchInfo = branchInfo
             bankBranchInstance = this
-        } else {
-            return bankBranchInstance
         }
+        return bankBranchInstance
     }
     get branchInfo() {
         return this.branchInfo
@@ -31,6 +30,7 @@ class BankBranch {
 
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
+
 class branchA extends BankBranch {
     branchName = "Big Boy Bank"
     branchAddress = "6 Main Street"
@@ -42,12 +42,14 @@ class branchB extends BankBranch {
 }
 
 getBranchInfo = () => {
-    if (branchA === branchB) {
+    if (branchA === bankBranchInstance && branchB === bankBranchInstance) {
         console.log("Branch A and Branch B refer to the same instance.")
     } else {
         console.log("Branch A and Branch B refer to different instances.")
     }
 }
+
+
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using ` === `.
 
