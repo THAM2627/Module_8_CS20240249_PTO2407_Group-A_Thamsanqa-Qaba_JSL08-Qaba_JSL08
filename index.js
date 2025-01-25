@@ -42,7 +42,7 @@ class branchB extends BankBranch {
 }
 
 getBranchInfo = () => {
-    if (branchA === bankBranchInstance && branchB === bankBranchInstance) {
+    if (branchA === branchB) {
         console.log("Branch A and Branch B refer to the same instance.")
     } else {
         console.log("Branch A and Branch B refer to different instances.")
