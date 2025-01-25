@@ -49,8 +49,7 @@ getBranchInfo = () => {
     }
 }
 
-console.log(getBranchInfo())
-console.log(branchA === branchB)
+getBranchInfo()
 
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using ` === `.
